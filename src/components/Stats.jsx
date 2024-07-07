@@ -6,7 +6,7 @@ import { stats } from "../constants/partners";
 const Stats = () => {
   return (
     <section className="relative bg-primary-500">
-      <div className="mx-auto flex w-full max-w-7xl  flex-col justify-between gap-10 p-4 py-10 md:flex-row md:py-20 lg:w-[90%]">
+      <div className="mx-auto flex w-full   flex-col justify-between gap-10 p-4  py-10 md:flex-row md:py-20 lg:w-[93%] ">
         <div className="space-y-5 md:w-1/2">
           <Typography
             fontWeight="bold"
@@ -17,12 +17,12 @@ const Stats = () => {
           </Typography>
           <Typography
             color="primary-dark"
-            variant="headline-l"
+            variant="headline-p"
             fontWeight="medium"
-            customClassName="md:max-w-xs"
+            customClassName="md:max-w-xs whitespace-nowrap"
           >
-            This is how we make a
-            <Typography tag="span" variant="headline-l" fontWeight="medium">
+            This is how we make <br /> a
+            <Typography tag="span" variant="headline-p" fontWeight="medium">
               {" "}
               difference
             </Typography>
@@ -48,10 +48,14 @@ const Stats = () => {
                 variant="display-l"
                 customClassName="display-l"
               >
-                {stat.value}
+                <p className="font-satoshi text-8xl leading-[120px]">
+                  {stat.value}
+                </p>
               </Typography>
               <Typography color="primary-dark" fontWeight="medium">
-                {stat.category}
+                <p className="font-merriweather text-xl font-regular leading-8">
+                  {stat.category}{" "}
+                </p>
               </Typography>
             </div>
           ))}

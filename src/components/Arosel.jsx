@@ -10,7 +10,7 @@ import { testimonies } from "../constants/testimonies";
 function SampleNextArrow(props) {
   const { onClick } = props;
   return (
-    <button onClick={onClick} className="absolute -bottom-14 left-20">
+    <button onClick={onClick} className="absolute -bottom-14 left-16">
       <img src={ArrowRight} alt="Next" />
     </button>
   );
@@ -19,7 +19,7 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
-    <button onClick={onClick} className="absolute -bottom-[55px] left-10">
+    <button onClick={onClick} className="absolute -bottom-[55px] left-0">
       <img src={ArrowLeft} alt="Previous" />
     </button>
   );

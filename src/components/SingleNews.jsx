@@ -10,15 +10,15 @@ const SingleNews = ({ heading, img, date, title }) => {
   };
 
   return (
-    <div className="font-satoshi flex-1">
+    <div className="flex-1 font-satoshi">
       <Typography
         color="primary-dark"
-        customClassName="uppercase text-md md:text-[16px] mb-3"
+        customClassName="uppercase text-md md:text-[22px] font-medium mb-3 font-satoshi-normal"
         fontWeight="light"
       >
         {heading}
       </Typography>
-      <div className="relative">
+      <div className="relative md:h-[407px]">
         <img src={img} alt="" className="md:h-[407px]" />
         <img
           src={AddIcon}

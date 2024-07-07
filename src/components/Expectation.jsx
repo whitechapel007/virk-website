@@ -1,6 +1,6 @@
 import Typography from "./Typography";
-import { ButtonSm } from "./Button";
-import ArrowRight from "../assets/arrow-right.svg";
+import { PlayButton } from "./Button";
+
 import { expectation } from "../constants/partners";
 
 const Expectations = () => {
@@ -28,12 +28,7 @@ const Expectations = () => {
             we&apos;ll square away the rest.
           </Typography>
           <div className="mt-10 flex max-w-[250px] items-center md:mt-20">
-            <ButtonSm
-              text="Let us help you"
-              customStyle="!uppercase !text-[11px]"
-              // icon={ArrowRight}
-            />
-            <img src={ArrowRight} alt="" className="cursor-pointer" />
+            <PlayButton text="Let us help you" />
           </div>
         </div>
         {expectation.map((each, id) => (

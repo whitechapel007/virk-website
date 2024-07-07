@@ -17,18 +17,18 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section className="justify-between bg-black-700 px-5 pb-10 pt-24 md:flex md:items-center  md:gap-20 lg:px-20 lg:py-24">
+      <section className="justify-between bg-black-700 px-5 pb-10  pt-32 md:flex md:items-center  md:gap-20 lg:px-14 lg:py-24">
         <div className="flex-1 font-bold text-white">
-          <p className="md:text-primary-h fluid-text font-bold leading-[0.8] text-white">
+          <p className="fluid-text font-bold leading-[0.8] text-white md:text-primary-h lg:mt-20">
             Results
           </p>
-          <p className="md:text-primary-h fluid-text font-bold leading-[0.8] text-white">
+          <p className="fluid-text font-bold leading-[0.8] text-white md:text-primary-h">
             fair &{" "}
           </p>
-          <p className="md:text-primary-h fluid-text font-bold leading-[0.8] text-white">
+          <p className="fluid-text font-bold leading-[0.8] text-white md:text-primary-h">
             square.
           </p>
-          <p className="md:text-primary-p mt-10">Book a free consultation.</p>
+          <p className="mt-10 md:text-primary-p">Book a free consultation.</p>
         </div>
         <div className="flex-1">
           <form action="" className="hidden flex-col  gap-10 lg:flex">
@@ -63,7 +63,7 @@ const Home = () => {
             <div>
               <button
                 type="submit"
-                className=" justify-start bg-primary-main px-4 py-2 text-white"
+                className=" w-[124px] justify-start bg-primary-main px-4 py-2 text-white"
               >
                 SUBMIT
               </button>

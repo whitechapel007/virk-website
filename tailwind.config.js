@@ -25,19 +25,25 @@ export default {
           "57px",
           { lineHeight: "64px", fontWeight: 700, letterSpacing: "-0.25px" },
         ],
-        "text-sm": [
-          "18px",
-          { lineHeight: "27px", fontWeight: 700,  },
-        ],
+        "text-sm": ["18px", { lineHeight: "27px", fontWeight: 700 }],
         "display-m": ["45px", { lineHeight: "52px", fontWeight: 700 }],
         "display-s": ["36px", { lineHeight: "44px", fontWeight: 700 }],
         "headline-l": ["32px", { lineHeight: "40px", fontWeight: 700 }],
+
+        "headline-p": [
+          "45px",
+          { lineHeight: "54px", fontWeight: 500, letterSpacing: "-1%" },
+        ],
         "headline-m": ["28px", { lineHeight: "36px", fontWeight: 700 }],
         "headline-s": ["24px", { lineHeight: "32px", fontWeight: 700 }],
         "title-l": ["22px", { lineHeight: "28px", fontWeight: 600 }],
         "title-m": [
           "16px",
           { lineHeight: "24px", fontWeight: 600, letterSpacing: "0.15px" },
+        ],
+        "title-mm": [
+          "28px",
+          { lineHeight: "42px", fontWeight: 500, letterSpacing: "1%" },
         ],
         "title-s": [
           "14px",
@@ -135,8 +141,10 @@ export default {
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
         "satoshi-light": ["Satoshi-light", "sans-serif"],
+        "satoshi-normal": ["Satoshi-normal", "sans-serif"],
         merriweather: ["Merriweather", "sans-serif"],
         "merriweather-light": ["Merriweather-light", "sans-serif"],
+        "merriweather-bold": ["Merriweather-Bold", "sans-serif"],
       },
     },
   },

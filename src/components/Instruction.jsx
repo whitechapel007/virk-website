@@ -10,7 +10,7 @@ const Instruction = () => {
       <div className="flex flex-col justify-between md:flex-row">
         <Typography
           color="primary-dark"
-          variant="headline-l"
+          variant="headline-p"
           fontWeight="medium"
           customClassName="font-satoshi"
         >
@@ -18,7 +18,7 @@ const Instruction = () => {
         </Typography>
         <Typography
           fontWeight="semi-bold"
-          customClassName="!text-primary-light text-[11px] md:max-w-[33rem] font-merriweather font-normal"
+          customClassName="!text-primary-light text-[11px] md:text-[21px] md:max-w-[33rem] font-merriweather-light md:tracking-[1.65%] leading-[39px] font-normal"
         >
           Virk Personal Injury Law is always available to explain your rights
           and different options to obtain compensation for any serious personal
@@ -44,7 +44,7 @@ const Instruction = () => {
               </Typography>
               <Typography
                 fontWeight="regular"
-                customClassName="!text-[#707070] text-[10px] md:max-w-[33rem] font-merriweather-light leading-[25px]"
+                customClassName="!text-[#707070] md:text-[20px] text-[10px] md:max-w-[33rem] font-satoshi-light leading-[25px]"
               >
                 {each.more}
               </Typography>

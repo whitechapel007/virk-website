@@ -15,7 +15,7 @@ const NavItem = ({ items, onClick }) => {
 
   return (
     <li
-      className={`font-satoshi-light text-xl font-regular underline-offset-4 transition-all hover:underline ${
+      className={`font-satoshi-light text-xl font-regular underline-offset-4 transition-all hover:underline tracking-[3%] ${
         isActive
           ? "text-primary-main underline hover:text-black-700"
           : "text-black-400 hover:text-primary-main"
@@ -52,15 +52,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-bg-color fixed z-50 flex h-20 w-full items-center justify-between bg-white px-10 py-4 transition-all duration-500 ease-in-out ${
+      className={`bg-bg-color fixed z-50 flex w-full items-center justify-between bg-white px-10 py-4 transition-all duration-500 ease-in-out md:h-[170px] md:px-14 ${
         isScrolled ? "h-16 shadow-md shadow-red-100" : ""
       }`}
     >
       <Link to="/" className="block w-28">
-        <img src={Logo} alt="logo" className="w-full" />
+        <img src={Logo} alt="logo" className="h-full w-full" />
       </Link>
       <div className="hidden items-center justify-between gap-20 md:flex md:w-4/5 lg:w-3/5 xl:w-1/2">
-        <ul className="font-satoshi flex h-full w-1/2 items-center justify-between">
+        <ul className="font-satoshi-normal flex h-full w-1/2 items-center justify-between">
           {navItems.map((items, index) => (
             <NavItem items={items} key={index} />
           ))}
@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="flex w-1/2 items-center gap-5">
           <ButtonSm
             text="Email us"
-            customStyle="!w-1/3 md:!w-1/2 max-w-[100px]"
+            customStyle="!w-1/3 md:!w-1/2 max-w-[150px]"
           />
           <ButtonLg
             text="Book a free consult"

@@ -19,6 +19,7 @@ const variantClassMap = {
   "body-s": "text-body-s",
   "caption-r": "text-caption-r",
   "text-sm": "text-sm",
+  "headline-p": "text-headline-p",
 };
 
 // Font weight class map

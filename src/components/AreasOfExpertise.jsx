@@ -17,11 +17,11 @@ const AreasOfExpertise = () => {
           </Typography>
           <Typography
             color="primary-dark"
-            variant="headline-l"
+            variant="headline-p"
             fontWeight="medium"
           >
             This is how we can
-            <Typography tag="span" variant="headline-l" fontWeight="medium">
+            <Typography tag="span" variant="headline-p" fontWeight="medium">
               {" "}
               help
             </Typography>{" "}
@@ -30,17 +30,17 @@ const AreasOfExpertise = () => {
           <Typography
             tag="span"
             fontWeight="medium"
-            customClassName="!text-primary-light text-[11px] lg:text-[13px] inline-block md:max-w-sm font-merriweather"
+            customClassName="!text-primary-light text-[11px] lg:text-[21px] inline-block font-merriweather-light font-regular leading-[39px] tracking-[1.9%]"
           >
             At Virk, we focus exclusively on personal injury law and we stay
             updated on all new developments in the field.
           </Typography>
-          <div className="flex flex-col">
+          <div className="flex  flex-col">
             {areasOfPractice.map((area, id) => (
               <Link
                 key={id}
                 to=""
-                className="border-t border-t-gray-200 py-3 text-title-m font-medium text-primary-light transition hover:text-primary-main"
+                className="text-title-mm border-t border-t-gray-200 py-3 font-medium text-primary-light transition hover:text-primary-main"
               >
                 {area.category}
               </Link>
@@ -48,10 +48,14 @@ const AreasOfExpertise = () => {
           </div>
         </div>
         <div className="flex-1">
-          <img src={Image} alt="" className="max-h-[800px] w-full" />
+          <img
+            src={Image}
+            alt=""
+            className="max-h-[1058px] h-full object-cover w-full max-w-[943px]"
+          />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between gap-5 pb-10 md:flex-row">
+      <div className="flex flex-col items-center justify-between gap-5 pb-10 md:flex-row md:px-10">
         <Typography
           color="primary-dark"
           customClassName=" !text-headline-l !font-medium"

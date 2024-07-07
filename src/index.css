@@ -12,9 +12,19 @@
   font-family: "Satoshi-light";
   src: url("./fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf");
 }
+
+@font-face {
+  font-family: "Satoshi-normal";
+  src: url("./fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
+}
 @font-face {
   font-family: "Merriweather";
   src: url("./fonts/Merriweather/Merriweather-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url("./fonts/Merriweather/Merriweather-Bold.ttf");
 }
 @font-face {
   font-family: "Merriweather-light";

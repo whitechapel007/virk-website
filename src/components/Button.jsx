@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
+import ArrowRight from "../assets/arrow-right.svg";
 export const ButtonSm = ({ text, customStyle, icon }) => {
   return (
     <button
-      className={`w-full border border-primary-main bg-white p-2 px-1 text-sm uppercase transition-all hover:bg-primary-main hover:text-white ${customStyle}`}
+      className={`font-satoshi-normal w-full border border-primary-main bg-white p-2 px-1 py-3 text-base font-bold uppercase leading-6 transition-all hover:bg-primary-main hover:text-white md:w-[155px] ${customStyle}`}
     >
       {text}
       {icon ? <img src={icon} alt="" /> : null}
@@ -13,7 +14,7 @@ export const ButtonSm = ({ text, customStyle, icon }) => {
 export const ButtonLg = ({ text, customStyle }) => {
   return (
     <button
-      className={`w-full border border-primary-main bg-primary-main p-2 px-1 text-sm uppercase text-white transition-all hover:bg-white hover:text-black-700 ${customStyle}`}
+      className={`w-full border border-primary-main bg-primary-main p-2 px-1  py-3 text-sm uppercase text-white transition-all hover:bg-white hover:text-black-700 ${customStyle}`}
     >
       {text}
     </button>
@@ -27,5 +28,20 @@ export const FloatingBtn = ({ floatStyle }) => {
     >
       contact us
     </button>
+  );
+};
+
+export const PlayButton = ({ text }) => {
+  return (
+    <div className="flex h-[55px]">
+      <button className="font-satoshi-normal flex h-full items-center border border-primary-main px-3 text-base font-bold leading-6 tracking-[10%] uppercase transition-all hover:bg-primary-main  hover:text-white">
+        {text}
+      </button>
+      <img
+        src={ArrowRight}
+        alt=""
+        className="h-full cursor-pointer border border-primary-main bg-primary-main"
+      />
+    </div>
   );
 };

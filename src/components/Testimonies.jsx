@@ -1,34 +1,29 @@
-import { ButtonSm } from "./Button";
-import ArrowRight from "../assets/arrow-right.svg";
 import Typography from "./Typography";
 import Carousel from "./Arosel";
+import { PlayButton } from "./Button";
 
 const Testimonies = () => {
   return (
-    <section className="mx-auto mb-10 flex max-w-[1440px] flex-col justify-between gap-10 px-4 py-10 md:flex-row md:py-16 lg:w-[90%]">
-      <div className="md:w-[35%]">
+    <section className=" mb-10 flex flex-col justify-between gap-10 py-10 pl-9 md:flex-row md:py-16 ">
+      <div className="flex-1">
         <Typography customClassName="uppercase font-bold !text-primary-light !text-[11px] !tracking-widest">
           What our clients are saying
         </Typography>
         <Typography
           color="primary-dark"
-          variant="headline-l"
+          variant="headline-p"
           fontWeight="medium"
-          customClassName="md:max-w-sm mt-5"
+          customClassName="md:max-w-sm mt-5 whitespace-nowrap"
         >
-          There is nothing better than knowing our clients are
-          <Typography tag="span" variant="headline-l" fontWeight="medium">
+          There is nothing better <br /> than knowing our clients <br /> are
+          <Typography tag="span" variant="headline-p" fontWeight="medium">
             {" "}
             happy
           </Typography>
           .
         </Typography>
         <div className="mt-10 flex max-w-[250px] items-center md:mt-20">
-          <ButtonSm
-            text="Read more Reviews"
-            customStyle="!uppercase !text-[11px]"
-          />
-          <img src={ArrowRight} alt="" className="cursor-pointer" />
+          <PlayButton text="Read more reviews" />
         </div>
       </div>
       <Carousel />
